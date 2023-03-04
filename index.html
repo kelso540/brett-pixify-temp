@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="stylesheet" href="./CSS/details.css"/>
+    <title>Meal Library</title>
+</head>
+<body>
+    <header>
+        <div id="icon-container">
+            <p id="menu-icon">&#x2630;</p>
+          </div>
+          <div class="buttons-container"></div>
+    </header>
+    <main>
+        <div id="meals-container"></div>
+        <form id="add-meal-form">
+            <h2>Add a new meal</h2>
+            <div class="input-container">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Enter meal name" required>
+            </div>
+            <div class="input-container">
+                <label for="imageUrl">Image URL:</label>
+                <input type="text" name="imageUrl" placeholder="Enter imageUrl" required>
+            </div>
+            <div class="input-container">
+                <label for="category">Category</label>
+                <select id="form-select" required>
+                    <option value="">Select a category</option>
+                </select>
+            </div>
+            <button type="submit" id="submit-btn">Submit</button>
+          </form>
+    </main>
+    
+    <footer>
+        <button class="theme-btn">Dark Mode</button>
+    </footer>
+    <script src="./SCRIPTS/script.js"></script>
+
+
+
+
+    <!-- NOTES: removed details.js so it wouldn't conflict with script.js -->
+
+    <!-- <script src="details.js"></script> -->
+
+
+
+    
+</body>
+</html> 
